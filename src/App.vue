@@ -19,7 +19,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-* {
-	font-family: 'Montserrat', sans-serif;
-}
+
+@import '@/assets/css/app.css';
 </style>
