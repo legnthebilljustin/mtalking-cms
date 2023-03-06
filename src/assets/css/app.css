@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap');
+
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Golos Text", sans-serif;
   color: #545454;
-}/*# sourceMappingURL=app.css.map */
+}
+
+body {
+  background-color: #bdbdbd;
+}
