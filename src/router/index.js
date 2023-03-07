@@ -24,22 +24,27 @@ const routes = [
         meta: {
             auth: true
         }
+    },
+    {
+        path: "/videomaterial",
+        name: "VideoMaterial",
+        component: () => import("@/views/cms/videomaterial/Index.vue"),
+        meta: {
+            auth: true
+        },
+        children: [
+            {
+                path: "unit",
+                name: "VideoMaterial.Unit",
+                component: () => import("@/views/cms/videomaterial/Unit.vue")
+            },
+            {
+                path: "video",
+                name: "VideoMaterial.Videos",
+                component: () => import("@/views/cms/videomaterial/Video.vue")
+            }
+        ]
     }
-    // {
-    //     path: "/videomaterial",
-    //     name: "VideoMaterial",
-    //     component: () => import("@/views/cms/videomaterial/Index.vue"),
-    //     meta: {
-    //         auth: true,
-    //     },
-    //     children: [
-    //         {
-    //             path: "units",
-    //             name: "VideoMaterial.Unit",
-    //             component: () => import("@/views/cms/videomaterial/Unit.vue")
-    //         },
-    //     ]
-    // }
 ]
 
 const router = new VueRouter({
