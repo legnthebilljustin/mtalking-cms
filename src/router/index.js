@@ -44,6 +44,23 @@ const routes = [
                 component: () => import("@/views/cms/videomaterial/Video.vue")
             }
         ]
+    },
+    {
+        path: "/webbooks",
+        name: "WebBooks",
+        component: () => import("@/views/cms/webbooks/Index.vue"),
+        children: [
+            {
+                path: "series",
+                name: "Webbooks.Series",
+                component: () => import("@/views/cms/webbooks/Series.vue")
+            },
+            {
+                path: "units",
+                name: "Webbooks.Units",
+                component: () => import("@/views/cms/webbooks/Units.vue")
+            }
+        ]
     }
 ]
 

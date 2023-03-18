@@ -75,7 +75,7 @@
                             <td>1.15</td>
                             <td>2.25</td>
                             <td class="d-flex align-center justify-left">
-                                <i class='bx bx-comment-detail mr-2'></i>
+                                <i class='bx bx-comment-detail mr-2' @click="showTips()"></i>
                                 <i class='bx bxs-edit green--text mr-2'></i>
                                 <i class='bx bx-trash red--text'></i>
                             </td>
@@ -84,24 +84,35 @@
                 </v-simple-table>
             </v-col>
         </v-row>
+
+        <TipsModal :show="tips"/>
     </v-container>
 </template>
 
 <script>
 import Vue from "vue"
 import VueYoutube from "vue-youtube"
+import TipsModal from "@/components/modals/Tips"
+
 Vue.use(VueYoutube)
 
 export default {
+    components: { TipsModal },
     data () {
         return {
             videoId: "qMXESlny4-I",
-            inputs: []
+            inputs: [],
+            tips: false
         }
     },
     computed: {
         player () {
             return this.$refs.youtube.player
+        }
+    },
+    methods: {
+        showTips () {
+            this.tips = true
         }
     }
 }

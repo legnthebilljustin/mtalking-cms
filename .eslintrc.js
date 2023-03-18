@@ -20,7 +20,8 @@ module.exports = {
         "no-mixed-spaces-and-tabs": 0,
         "no-unused-vars": "off",
         "vue/multi-word-component-names": "off",
-        "vue/valid-template-root": "off" // remove this
+        "vue/valid-template-root": "off", // remove this,
+        "vue/no-mutating-props": "off" // update and remove tis warn
     },
     overrides: [
         {
