@@ -61,6 +61,18 @@ const routes = [
                 component: () => import("@/views/cms/webbooks/Units.vue")
             }
         ]
+    },
+    {
+        path: "/pagoda",
+        name: "Pagoda",
+        component: () => import("@/views/pagoda/Index.vue"),
+        children: [
+            {
+                path: "units",
+                name: "Pagoda.Units",
+                component: () => import("@/views/pagoda/Units.vue")
+            }
+        ]
     }
 ]
 

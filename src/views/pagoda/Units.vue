@@ -2,17 +2,8 @@
     <v-container class="mt-5">
         <v-row>
             <v-col>
-                <h2 class="blue--text font-weight-regular">Interview English Step 1</h2>
-                <div class="font-weight-light subtitle-2">Webbooks - Specialized Job Preparation Course - Interview English</div>
-            </v-col>
-            <v-col>
-                <v-btn v-for="(icon, i) in icons" :key="i"
-                    fab small dense
-                    :color="icon.color"
-                    class="ml-2"
-                >
-                    <i :class="icon.class"></i>
-                </v-btn>
+                <h2 class="blue--text font-weight-regular">Talking Plus 1</h2>
+                <div class="font-weight-light subtitle-2">Pagoda - Talking Plus 1</div>
             </v-col>
         </v-row>
         <v-row>
